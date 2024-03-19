@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
 
 body {
-  background-image: <img src="images/retro-bowl.jpg">; font-family: 'Montserrat', sans serif;
+  background-image: <img src="images/retro-bowl.jpg">; font-family: 'OCR A Std', monospace;
   
 
 nav {
@@ -22,7 +22,7 @@ margin: auto;
 
 nav img {
 height: 80%;
-width: auto;
+width: 80%;
 margin-right: 1%;
 border-radius: 1vw;
 cursor: pointer;
