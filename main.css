@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
 
 body {
-  background-image: url('https://i.cbc.ca/1.6653184.1668606839!/fileImage/httpImage/image.jpg_gen/derivatives/4x3_1180/nasa-moon-rocket.jpg'); font-family: 'Montserrat', sans serif;
+  background-image: <img src="images/background.jpg">; font-family: 'OCR A Std', monospace;
   
 
 nav {
@@ -22,7 +22,7 @@ margin: auto;
 
 nav img {
 height: 80%;
-width: auto;
+width: 80%;
 margin-right: 1%;
 border-radius: 1vw;
 cursor: pointer;
