@@ -108,7 +108,62 @@
 
         </body>
       </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .jump-out {
+      position: fixed; /* add this line */
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: jump-out-animation 2s ease-in-out 0s infinite;
+    }
 
+    @keyframes jump-out-animation {
+      0% {
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+      10% {
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+      20% {
+        bottom: 20px;
+        transform: translateX(-50%) rotate(-5deg);
+      }
+      30% {
+        bottom: 20px;
+        transform: translateX(-50%) rotate(5deg);
+      }
+      40% {
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+      50% {
+        bottom: 40px;
+        transform: translateX(-50%);
+      }
+      100% {
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    .jump-out img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="jump-out">
+    <img src="https://lh3.googleusercontent.com/proxy/eF-HtzKYZuwkoRSQW4hJbTmN-_I1s6IQ3V5L8SO8fxER-oJ474W5q-SawVKVD50Ypu1-pT8zEH9-X5erg9d93f-FyHkHi6wXIpv3" alt="jumper">
+  </div>
+</body>
+</html>
     </div>
     <h2>Credit to: 3kh0</h2>
 </body>
