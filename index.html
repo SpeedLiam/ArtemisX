@@ -146,11 +146,12 @@
 <body>
   <img id="button" src="images/tip.jpeg" alt="Button" onclick="playAudioAndShowRandomText()">
   <div id="text-container"></div>
-  <audio id="audio-element" src="tip-sound.mp3"></audio>
+  <audio id="audio-element" src="music/tip-sound.mp3"></audio>
 
   <script>
     const textContainer = document.getElementById('text-container');
-    const textList = ['This is a random text.', 'Another random text.', 'Yet another random text.'];
+    const textList = ['if you see someone crying ask why.', 'cutting tennis balls in half lets you store two more balls.', 'always have a fork so if somenone robs you you can say thank you lord for the food and then charge at them.' 'instead of brushing your teeth put toothpaste in your food to save time.'
+        'put cyanide in your dog food' 'dogs really like chocolate' 'did you know cyanide is found in grapes?' 'what am i doing with my life...' 'put laxitives in your friends water.' 'if someone rejects you deal with it.'];
     const audioElement = document.getElementById('audio-element');
 
     function playAudioAndShowRandomText() {
