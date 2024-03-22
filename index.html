@@ -112,17 +112,34 @@
 <html>
 <head>
   <style>
+    body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+    }
     #button {
       position: fixed;
       bottom: 10px;
       right: 10px;
       animation: jump 2s ease-in-out infinite;
+      height: 50px;
+      width: 50px;
     }
-
     @keyframes jump {
       0% { transform: translateY(0); }
       50% { transform: translateY(20px); }
       100% { transform: translateY(0); }
+    }
+    #text-container {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 200px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -137,10 +154,7 @@
     function showRandomText() {
       const randomText = textList[Math.floor(Math.random() * textList.length)];
       textContainer.textContent = randomText;
-      textContainer.style.display = 'block';
-      setTimeout(() => textContainer.style.display = 'none', 3000);
-    }
-  </script>
+      textContainer.style.display = '
 </body>
 </html>
     </div>
