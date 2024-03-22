@@ -144,7 +144,7 @@
   </style>
 </head>
 <body>
-  <img id="button" src="images/logo.png" alt="chat" onclick="showRandomText()">
+  <img id="button" src="images/logo.png" alt="Button" onclick="showRandomText()">
   <div id="text-container"></div>
 
   <script>
@@ -154,7 +154,10 @@
     function showRandomText() {
       const randomText = textList[Math.floor(Math.random() * textList.length)];
       textContainer.textContent = randomText;
-      textContainer.style.display = '
+      textContainer.style.display = 'block';
+      setTimeout(() => textContainer.style.display = 'none', 3000);
+}
+  </script>
 </body>
 </html>
     </div>
